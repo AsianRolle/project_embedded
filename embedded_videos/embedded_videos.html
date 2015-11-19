@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How To</title>
+
+</head>
+
+<link rel="stylesheet" href="embedded_videos.css">
+<script src="embedded_videos.js"></script>
+
+<body background ="pic/white.jpg";
+  background-attachment: stretch; >
+
+<h1>How-to-Tutorial</h1>
+
+<section id="embeddedvideos">
+
+      <h2> TOP VIDEO</h2>
+
+          <div class="elastic-video">
+            <iframe src="http://player.vimeo.com/video/78969465?byline=0&amp;portrait=0" width="610" height="343" frameborder="0">
+            </iframe>
+          </div>
+
+       <div id="yt-video">
+        <p>
+          <h3>Call of Duty- Black Ops III Tutorial</h3>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/qfg0mImqLhk?rel=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>
+        </p>
+       </div>
+
+       <div id="html-video">
+         <p>
+           <h3> HTML & CSS Tutorial</h3>
+           <video id="html" poster="pic/thb_html.jpg" width="560" height="315" controls>
+                          <source src="vid/html.mp4"  type="video/mp4" />
+                          <source src="html_libtheora.ogv" type="video/ogg" />
+                      </video>
+
+        </p>
+       </div>
+
+       <div id="food-video">
+        <p>
+          <h3>Food Tutorial</h3>
+          <video id="food" poster="pic/thb_food.jpg"  width="560" height="315" >
+                          <source src="vid/food.mp4" type="video/mp4"/>
+                          <source src="food_libtheora.ogv" type="video/ogg" />
+                      </video>
+
+  <div id="buttonbar">
+    <button id="restart" style= "height: 25px; width: 50px"; onclick="restart();">[]</button>
+    <button id="rew" style= "height: 25px; width: 50px"; onclick="skip(-10)">&#x00AB;</button>
+    <button id="play" style= "height: 25px; width: 50px"; onclick="vidplay()">&#x25B6;</button>
+    <button id="fastFwd" style= "height: 25px; width: 50px"; onclick="skip(10)">&#x00BB;</button>
+  </div>
+
+
+        </p>
+      </div>
+
+      <div id="makeup-video">
+       <p>
+         <h3>Halloween Make-Up Tutorial</h3>
+         <video id="makup" poster="pic/thb_makup.jpg"  width="560" height="315" preload=auto oncanplay="InitControls(this)" ontimeupdate="UpdateTime(this)" loop="1" allowfullscreen>
+                         <source src="vid/makup.mp4" type="video/mp4"/>
+                         <source src="makup_libtheora.ogv" type="video/ogg" />
+                     </video>
+
+            <select id='Scenes' onchange='SelectScene(makup,this)' size=8>
+              <option value='0:05' selected id=StartScene>0:05 Vampire</option>
+              <option value='0:10' id=SecondScene>1:51 Bambi</option>
+              <option value='3:16'>3:16 Spider Web</option>
+              <option value='0:20'>4:23 Creepy Ragdoll</option>
+            </select>
+
+          <div id =buttonbar1>
+            <input type=button style= "height: 25px; width: 50px"; id=butStop value='&#x25FC;' onclick='RewindVideo(makup);'>
+            <input type=button style= "height: 25px; width: 50px"; id=fstbwdbut value='&#x00AB;'           onclick='PlayPause(makup,this,-2)'>
+            <input type=button style= "height: 25px; width: 50px"; id=butStepBwd value='&#x23B9;&#x2329;' onclick='FrameStep(makup,this,-0.04)'>
+            <input type=button style= "height: 25px; width: 50px"; id=snailbut value='~'                  onclick='PlayPause(makup,this,0.2)'>
+            <input type=button style= "height: 25px; width: 50px"; id=playbutton value='&#x25B6;'           onclick='PlayPause(makup,this,1)'>
+            <input type=button style= "height: 25px; width: 50px"; id=butStepFwd value='&#x232A;&#x23B8;' onclick='FrameStep(makup,this,+0.04)'>
+            <input type=button style= "height: 25px; width: 50px"; id=fstfwdbut value='&#x00BB;'           onclick='makup(makup,this,2)'>
+            <td><input type=range id=volume min=0 max=1 step=0.1 value=1 onchange='AdjustVolume(makup,this.value)'>
+              <td><input type=button value='&#x266B;' onclick='Mute(makup,this)'>
+                <td style="white-space: nowrap;">Lautstaerke: <span id=VolumeTxt> 100% </span>
+                  <p>
+                  <input type=range id=videopos min=0 max=0 step=0.04 onchange='GotoPos(makup,this.value)'>
+                    </p>
+          </div>
+       </p>
+     </div>
+</section>
+
+     <section class="gallery" id="gallery">
+       <h3>Andere Videos</h3>
+
+     <div class="gallery-items">
+      <div class="gallery-item">
+         <div class="gallery-item-wrapper">
+          <iframe name="embedded" allowfullscreen webkitallowfullscreen mozallowfullscreen width="480" height="270" frameborder="no" scrolling="no" temp-src="http://www.onionstudios.com/embed?id=3158"></iframe>
+         </div>
+        <a href="http://www.onionstudios.com/channels/the-onion" target="_blank"><img src="pic/onion.png" width ="336" height="68" alt="The Onion"></a>
+</div>
+
+      <div class="gallery-item">
+         <div class="gallery-item-wrapper guardian-fix">
+          <iframe temp-src="https://embed.theguardian.com/embed/video/news/video/2015/jul/20/california-drought-eat-beef-wash-video" width="480" height="270" frameborder="0" allowfullscreen></iframe>
+         </div>
+        <a href="http://www.theguardian.com/video" parent="_blank"><img src="pic/guardian.png"width ="336" height="68" alt="The Guardian"></a>
+      </div>
+     </div>
+
+
+   </section>
+   <section class="used-by" id= "used-by">
+
+  <h3 class="title">Built by the <strong><a href="https://github.com/videojs/video.js/network/members" target="_blank">community</a></strong>, used by the <strong>professionals</strong>...</h3>
+
+  <ul class= list>
+  <li><a href="http://instagram.com" target="_blank"><img src="pic/instagram.png" style="height: 105px; width: 105px" alt="Instagram"></a>
+	<li><a href="http://twitter.com" target="_blank"><img src="pic/twitter.png" style="height: 105px; width: 105px" alt="Twitter"></a>
+  <li><a href="http://microsoft.com" target="_blank"><img src="pic/microsoft.png" style="height: 105px; width: 105px" alt="Microsoft"></a>
+	<li><a href="http://dropbox.com" target="_blank"><img src="pic/dropbox.png" style="height: 105px; width: 105px" alt="Dropbox">
+	<li><a href="http://github.com" target="_blank"><img src="pic/github.png" style="height: 105px; width: 105px" alt="Github"></a></li>
+</ul>
+
+
+	<p>...and hundreds of thousands more... </p>
+</section>
+
+
+</body>
+</html>

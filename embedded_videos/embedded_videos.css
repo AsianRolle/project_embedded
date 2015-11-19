@@ -1,0 +1,97 @@
+
+.elastic-video {
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 15px;
+  height: 0;
+  overflow: hidden;
+}
+.elastic-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+
+}
+li {
+  float: left;
+  display: inline;
+  padding-left: 140px;
+}
+  section.used-by {
+    background-color: #ECEEF1;
+    text-align: center;
+    height: 190px;
+    width: 1343px;
+
+  }
+
+  h1 { border-bottom:1px solid black ; background-color: #ECEEF1;
+  top: -5em;
+}
+
+h1, h2, h3 {color:#868688;
+           font-family: "Lato","Helvetica Neue", Helvetica,Arial,sans-serif; }
+
+h2 { text-align: center;}
+
+  video, iframe { border:1px solid black;
+          background: black; }
+
+  #yt-video{
+    position: absolute;
+    top: 84em;
+    left: 47em;
+
+  }
+  #html-video{
+    position: absolute;
+    top: 59em;
+    left: 47em;
+  }
+  #food-video{
+    position:absolute;
+    top: 59em;
+    left: 1em;
+  }
+  #makeup-video{
+    position: absolute;
+    top: 84em;
+    left: 1em;
+  }
+  #other-videos{
+    position: absolute;
+    top: 105em;
+    left: 1em;
+  }
+  #used-by{
+    position:absolute;
+    top: 140em;
+    left: 0em;
+  }
+  #Scenes{
+    position:relative;
+    left: -4px;
+    bottom: 3px;
+  }
+  #gallery{
+    position: absolute;
+    top: 112em;
+    left: 1em;
+  }
+  #embeddedvideos{
+    padding-top: 2em;
+  }
